@@ -1,0 +1,80 @@
+/* index css */
+
+/* 비주얼 */
+.visual{position: relative; width: 100%;}
+.visual .swiper-slide img{width: 100%; height: auto; display: block;}
+/* 비주얼 문구 : 슬라이드마다 하나씩, 이미지 위에 */
+.visual .swiper-slide{position: relative;}
+.visual .visual_txt{position: absolute; left: 0; right: 0; bottom: 70px; padding: 0 35px; font-size: var(--font-h4-size); font-weight: 700; line-height: 1.35; color: #fff; letter-spacing: -0.5px; text-shadow: 0 2px 8px rgba(0,0,0,.3);
+    opacity: 0; transform: translateY(15px); transition: opacity .6s .3s, transform .6s .3s;}  /* 기본은 숨김 */
+.visual .swiper-slide-active .visual_txt{opacity: 1; transform: translateY(0);}  /* 현재 슬라이드 문구만 올라오며 나타남 */
+.visual .visual_txt span{color: #7ed957;}
+
+/* 비주얼 페이지네이션 */
+.visual .swiper-pagination{position: absolute; left: 0; right: 0; bottom: 40px; z-index: 10; text-align: center; line-height: 0;}
+.visual .swiper-pagination-bullet{width: 6px; height: 6px; margin: 0 3px !important; background: #fff; opacity: .5; border-radius: 3px; transition: width .3s;}
+.visual .swiper-pagination-bullet-active{width: 24px; opacity: 1;}
+
+/* ESG 경영 */
+.esg{padding: 50px 20px;}
+.esg .txt span{display: block; font-family: "Roboto", sans-serif; font-size: var(--font-14-size); font-weight: 700; color: var(--color-main); letter-spacing: .5px;}
+.esg .txt h3{margin-top: 6px; font-size: var(--font-h4-size); font-weight: 700; color: var(--color-font1);}
+.esg .txt p{margin-top: 14px; font-size: var(--font-16-size); line-height: 1.6; color: var(--color-font2); word-break: keep-all;}
+
+#content .esg ul{margin-top: 30px;}
+#content .esg li{margin-top: 20px; border: 1px solid #ddd; border-radius: 30px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.06);}
+#content .esg li:first-child{margin-top: 0;}
+#content .esg li .img img{width: 100%; height: auto;}
+#content .esg li .info{position: relative; padding: 16px 60px 18px 16px;}
+#content .esg li .info .cate{display: block; font-size: var(--font-14-size); font-weight: 700; color: var(--color-main);}
+#content .esg li .info h4{margin-top: 4px; font-size: var(--font-18-size); font-weight: 700; color: var(--color-font1);}
+#content .esg li .info p{margin-top: 4px; font-size: var(--font-14-size); color: var(--color-font2);}
+#content .esg li .info .material-symbols-outlined{position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border: 1px solid #ddd; border-radius: 50%; line-height: 32px; text-align: center; font-size: 22px; color: var(--color-main);}
+
+/* 비전 */
+#content .vision{padding: 50px 20px; background: url(../images/main/visionx2.jpg) no-repeat center / cover; height: 400px;position: relative;}
+#content .vision .txt{position: absolute; left: 5%; bottom: 5%;}
+#content .vision .cate{display: block; font-family: "Roboto", sans-serif; font-size: var(--font-14-size); font-weight: 700; color: #81FFC4; letter-spacing: .5px;}
+#content .vision h3{margin-top: 6px; margin-bottom: 15px; font-size: var(--font-h6-size); font-weight: 700; color: #fff; line-height: 1.3;}
+#content .vision a{display: inline-flex; align-items: center; gap: 7px; font-weight: 600; padding: 10px 14px 10px 16px; color: #fff; border: 1px solid #fff; border-radius: 30px; transition: background .3s, color .3s;}
+#content .vision a .material-symbols-outlined{font-size: 16px;}
+#content .vision a:hover,
+#content .vision a:active{background: #fff; color: #000;}
+
+/* 사업소재 */
+#content .bus{padding: 50px 20px;background: #F6F7F8;}
+#content .bus .cate{display: block; font-family: "Roboto", sans-serif; font-size: var(--font-14-size); font-weight: 700; color: var(--color-main); letter-spacing: .5px;}
+#content .bus h3{margin-top: 6px; margin-bottom: 15px; font-size: var(--font-h4-size); font-weight: 700; color: var(--color-font1); line-height: 1.3;}
+#content .bus p{margin-top: 14px; margin-bottom: 30px; font-size: var(--font-16-size); line-height: 1.6; color: var(--color-font2); word-break: keep-all;}
+#content .bus img{width: 500px; border-radius: 30px;}
+#content .bus .item .card{text-align: center;}
+#content .bus .item .card h4{margin-top: 6px; font-size: var(--font-h5-size); font-weight: 700; color: var(--color-font1);}
+#content .bus .item .card p{margin-top: 4px; font-size: var(--font-16-size); color: var(--color-font2);}
+
+/* 사업소개 슬라이더 + 좌우 버튼 */
+#content .bus .bus_slide{position: relative; padding: 0 44px;}
+#content .bus .bus_slide img{display: block; width: 90%;justify-content: center; height: auto; margin: 0 auto 25px;}
+#content .bus .bus_prev,
+#content .bus .bus_next{position: absolute; top: 40%; transform: translateY(-50%); z-index: 10; width: 36px; height: 36px; padding: 0; border: 1px solid #ddd; border-radius: 50%; background: #fff; color: var(--color-main); cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.06);}
+#content .bus .bus_prev{left: 0;}
+#content .bus .bus_next{right: 0;}
+#content .bus .bus_prev .material-symbols-outlined,
+#content .bus .bus_next .material-symbols-outlined{font-size: 22px; line-height: 34px;}
+
+/* 사업소개 페이지네이션 (비주얼과 같은 모양, 흰 배경이라 메인 컬러) */
+#content .bus .swiper-pagination{position: static; margin-top: 10px; text-align: center; line-height: 0;}
+#content .bus .swiper-pagination-bullet{width: 6px; height: 6px; margin: 0 3px !important; background: var(--color-main); opacity: .3; border-radius: 3px; transition: width .3s;}
+#content .bus .swiper-pagination-bullet-active{width: 24px; opacity: 1;}
+
+/* 인재채용 */
+#content .rec{padding: 50px 20px;}
+#content .rec .txt img{width: 100%; border-radius: 30px;  margin-bottom: 30px;}
+#content .rec .cate{display: block; font-family: "Roboto", sans-serif; font-size: var(--font-14-size); font-weight: 700; color: var(--color-main); letter-spacing: .5px;}
+#content .rec h3{margin-top: 6px; margin-bottom: 15px; font-size: var(--font-h4-size); font-weight: 700; color: var(--color-font1); line-height: 1.3;}
+#content .rec p{margin-top: 14px; margin-bottom: 30px; font-size: var(--font-16-size); line-height: 1.6; color: var(--color-font2); word-break: keep-all;}
+#content .rec .list .rec_list{padding: 20px 80px; position: relative; border-top: 1px solid #E2E3E3;}
+#content .rec .list .rec_list:last-child{border-bottom: 1px solid #E2E3E3;}
+#content .rec .list .rec_list span{color: var(--color-font3); display: block; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);}
+#content .rec .list .rec_list .icon{position: absolute; left: 10px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: #EFF7FF; color: var(--color-main); font-size: 18px;}
+#content .rec .list .rec_list dl dt{margin: 5px 0; font-size: var(--font-gnb-size); font-weight: 700; color: var(--color-font1);}
+#content .rec .list .rec_list dl dd{font-size: var(--font-16-size);color: var(--color-font2);}

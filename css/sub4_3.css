@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* sub4_3 복리후생 콘텐츠 */
+
+
+/* 첫 문구 */
+.fir{margin-bottom: 30px;}
+.fir img{width: 100%;border-radius: 10px;margin-bottom: 20px;}
+.fir p{font-size: var(--font-16-size); color: var(--color-font2);word-break: keep-all;line-height: 1.7;}
+
+/* 복지 5개 영역 : 왼쪽 dt(번호+영역명), 오른쪽 dd 목록 */
+.interest .interest_list{border-top: 1px solid #DBDFE5;}
+.interest .interest_list li{padding: 25px 0;border-bottom: 1px solid #DBDFE5;}
+.interest .interest_list dl{display: grid;grid-template-columns: 150px 1fr;column-gap: 20px;}
+.interest .interest_list dt{grid-row: span 4;font-size: var(--font-18-size);font-weight: 700;color: var(--color-font1);line-height: 1.4;word-break: keep-all;}  /* dd 최대 4줄만큼 왼쪽 차지 */
+.interest .interest_list dt .num{display: block;font-size: var(--font-16-size);color: var(--color-main);margin-bottom: 15px;}
+.interest .interest_list dd{grid-column: 2;padding: 5px 0;font-size: var(--font-16-size);color: var(--color-font1);line-height: 1.5;word-break: keep-all;}
+.interest .interest_list dd.etc{font-size: var(--font-14-size);color: var(--color-font3);}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* sub3_1 시멘트 콘텐츠 */
+
+
+/* 첫 문구 */
+.fir{margin-bottom: 50px;}
+.fir img{width: 100%;border-radius: 10px;margin-bottom: 20px;}
+.fir .fir_list{width: 100%; display: grid; grid-template-columns: repeat(2,minmax(0,1fr));background: #F6F7F8; border-radius: 10px;padding: 10px;}
+.fir .fir_list li{text-align: center;padding: 30px 8px;}
+.fir .fir_list li:nth-child(odd){border-right: 1px solid #DBDFE5;}
+.fir .fir_list li:nth-child(-n+2){border-bottom: 1px solid #DBDFE5;}
+.fir .fir_list li > p:first-child{font-size: var(--font-gnb-size);line-height: 1.6;color: #007ae6;word-break: keep-all;}
+.fir .fir_list li .num{font-size: clamp(30px, 10vw, 42px); font-weight: 700; color: var(--color-main);line-height: 1.2;}
+.fir .fir_list li p{font-size: var(--font-16-size); color: var(--color-font2);margin-top: 20px; word-break: keep-all;line-height: 1.6;}
+
+/* 시멘트 포트폴리오 */
+.port{margin:0 -20px 50px; background: #F6F7F8; padding: 50px 20px;}
+.port h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 30px;word-break: keep-all;}
+.port .port_list{background: #fff;padding: 30px 30px;border-radius: 10px;}
+.port .port_list li{padding: 30px 0;}
+.port .port_list li:not(:last-child){border-bottom: 1px solid #B4BAC4;}
+.port .port_list .num{font-size: var(--font-16-size);font-weight: 700;color: var(--color-main);display: block; margin-bottom: 5px;}
+.port .port_list strong{display: block; font-size: var(--font-gnb-size); margin-bottom: 10px;}
+.port .port_list p{font-size: var(--font-16-size);color: var(--color-font2);word-break: keep-all;line-height: 1.7;}
+
+/* 제조공정 */
+.process h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 30px;word-break: keep-all;}
+.process .process_list{background: #F6F7F8;border-radius: 10px;padding: 20px 20px;}
+.process .process_list li{padding: 20px 0;}
+.process .process_list li:not(:last-child){border-bottom: 1px solid #DBDFE5;}
+.process .process_list .num{font-size: var(--font-16-size);font-weight: 700;color: var(--color-main);display: block;}
+.process .process_list strong{font-size: var(--font-18-size);color: var(--color-font1);margin: 10px 0;display: block;}
+.process .process_list p{font-size: var(--font-16-size);color: var(--color-font2);word-break: keep-all;line-height: 1.7;}

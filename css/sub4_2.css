@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* sub4_2 인사제도 콘텐츠 */
+
+
+/* 첫 문구 */
+.fir{margin-bottom: 50px;}
+.fir img{width: 100%;border-radius: 10px;margin-bottom: 20px;}
+.fir p{font-size: var(--font-16-size); color: var(--color-font2);word-break: keep-all;line-height: 1.7;}
+
+/* 성장 지원 체계 */
+.support{margin: 0 -20px 50px; background: #F6F7F8; padding: 50px 20px;}
+.support h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 20px;word-break: keep-all;}
+.support .support_list{background: #fff; padding: 0 25px;border-radius: 10px;}
+.support .support_list li{padding: 25px 0;}
+.support .support_list li:not(:last-child){border-bottom: 1px solid #DBDFE5;}
+.support .support_list strong{display: block;font-size: var(--font-18-size);color: var(--color-font1);margin-bottom: 15px;}
+.support .support_list p{font-size: var(--font-16-size); color: var(--color-font2);word-break: keep-all;line-height: 1.7;}
+
+/* 공정하게 보상합니다 */
+.just h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 20px;word-break: keep-all;}
+.just .just_list{background: #F6F7F8;padding: 0 25px;border-radius: 10px;}
+.just .just_list li{padding: 25px 0;}
+.just .just_list li:not(:last-child){border-bottom: 1px solid #DBDFE5;}
+.just .just_list .blue{font-size: 42px; color: var(--color-main);font-weight: 700;}
+.just .just_list strong{display: block;font-size: var(--font-18-size);color: var(--color-font1);margin-bottom: 15px;}
+.just .just_list small{font-size: var(--font-16-size);font-weight: 500;margin-left: 3px;}
+.just .just_list p{font-size: var(--font-16-size); color: var(--color-font2);word-break: keep-all;line-height: 1.7;}

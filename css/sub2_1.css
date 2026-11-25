@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* sub2_1 지속가능경영 콘텐츠 */
+
+/* 첫 문구 */
+.fir{margin-bottom: 30px;}
+.fir h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 30px;word-break: keep-all;}
+.fir img{width: 100%;border-radius: 10px; margin-bottom: 50px;}
+
+/* 추진방향 */
+.load{margin-bottom: 50px;}
+.load h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;margin-bottom: 30px;}
+.load .load_list li{margin-bottom: 30px;}
+.load .load_list .direction img{width: 100%;border-radius: 10px;margin-bottom: 30px;}
+.load .load_list .direction span{font-size: var(--font-16-size);font-weight: 700;color: var(--color-main);display: block; margin-bottom: 5px;}
+.load .load_list .direction h4{font-size: var(--font-gnb-size); font-weight: 700;margin-bottom: 10px;}
+.load .load_list .direction p{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;margin-bottom: 10px;}
+
+/* 비전과 전략 */
+.vision{margin:0 -20px 50px; background: #F6F7F8; padding: 50px 20px;}
+.vision .txt h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 30px;word-break: keep-all;}
+.vision .txt p{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;margin-bottom: 30px;}
+.vision .txt img{width: 100%; border-radius: 10px;margin-bottom: 30px;}
+.vision .green{padding: 30px 25px; background: #fff; margin-bottom: 20px;}
+.vision .green span{font-size: var(--font-h6-size);font-weight: 500;color: var(--color-main);display: block; margin-bottom: 10px;}
+.vision .green p{font-size: var(--font-14-size);color: #6B7280;margin-bottom: 20px;padding: 0 0 20px; border-bottom: 1px solid #DBDFE5;}
+.vision .green strong{font-size: var(--font-16-size);font-weight: 700;line-height: 1.5;display: block;word-break: keep-all;}
+.vision .climate{display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;}
+.vision .climate .climate_li{padding: 20px 15px 25px; background: #fff; border-top: 2px solid var(--color-main);}
+.vision .climate .climate_li strong{font-size: var(--font-16-size);font-weight: 700;display: block; margin-bottom: 10px;word-break: keep-all;}
+.vision .climate .climate_li p{font-size: var(--font-14-size);line-height: 1.6;color: #6B7280;word-break: keep-all;}
+
+/* ESG등급 */
+.esg{margin-bottom: 50px;}
+.esg h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 30px;}
+.esg p{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;margin-bottom: 30px;}
+.esg p span{font-weight: 800;}
+.esg .esg_fo{display: grid; grid-template-columns: repeat(2, 1fr);background: #F6F7F8;padding: 10px 20px; border-radius: 10px;}
+.esg .esg_fo .fo_list{padding: 25px 0;text-align: center;}
+.esg .esg_fo .fo_list:nth-child(odd){border-right: 1px solid #DBDFE5;}
+.esg .esg_fo .fo_list:nth-child(-n+2){border-bottom: 1px solid #DBDFE5;}
+.esg .esg_fo .fo_list span{font-size: 56px;color: #14181D;margin-bottom: 10px;display: block;font-weight: 800;}
+.esg .esg_fo .fo_list .blue{color: var(--color-main);}
+.esg .esg_fo .fo_list strong{font-size: var(--font-gnb-size);margin-bottom: 5px;display: block;}
+.esg .esg_fo .fo_list p{font-size: var(--font-16-size);color: #6B7280;}

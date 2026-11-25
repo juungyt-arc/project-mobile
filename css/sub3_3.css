@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* sub3_3 레미탈 콘텐츠 */
+
+
+/* 첫 문구 */
+.fir{margin-bottom: 30px;}
+.fir img{width: 100%;border-radius: 10px;margin-bottom: 20px;}
+.fir p{font-size: var(--font-16-size); color: var(--color-font2);text-align: justify; word-break: break-all;line-height: 1.7;}
+.fir p strong{color: var(--color-main);font-weight: 700;}
+
+
+/* 60여종의 제품군 */
+.product{margin: 0 -20px 50px; background: #F6F7F8; padding: 50px 20px;}
+.product h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 20px;word-break: keep-all;}
+.product > p{font-size: var(--font-16-size);color: var(--color-font2);line-height: 1.7;word-break: keep-all;margin-bottom: 25px;}
+.product .product_list li{background: #fff;border-radius: 10px;padding: 25px 20px;}
+.product .product_list li:not(:last-child){margin-bottom: 15px;}
+.product .product_list strong{display: flex;justify-content: space-between;align-items: center;font-size: var(--font-gnb-size);color: #0A1830;padding-bottom: 15px;margin-bottom: 15px;border-bottom: 2px solid var(--color-main);}
+.product .product_list strong span{font-size: var(--font-14-size);font-weight: 500;color: var(--color-main);background: var(--color-sub1);padding: 4px 10px;border-radius: 20px;}
+.product .product_list dl{display: grid;grid-template-columns: 90px 1fr;row-gap: 12px;}
+.product .product_list dt{font-size: var(--font-16-size);font-weight: 700;color: var(--color-font1);}
+.product .product_list dd{font-size: var(--font-16-size);color: var(--color-font2);line-height: 1.5;word-break: keep-all;}
+
+/* 개척한 기술력 */
+.technology h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 20px;word-break: keep-all;}
+.technology .technology_list{background: #F6F7F8; border-radius: 10px; padding: 10px 20px;}
+.technology .technology_list li{padding: 30px 0;}
+.technology .technology_list li:not(:last-child){border-bottom: 1px solid #B4BAC4;}
+.technology .technology_list .num{display: block; font-size: 42px;font-weight: 700; color: var(--color-main);line-height: 1.2;}
+.technology .technology_list strong{display: block;font-size: var(--font-gnb-size);color: var(--color-font1);margin: 10px 0;}
+.technology .technology_list p{font-size: var(--font-16-size);color: var(--color-font2);line-height: 1.7;word-break: keep-all;}

@@ -1,0 +1,22 @@
+/* sub1_4 오시는길 콘텐츠 */
+.content_area{padding-bottom: 0;}
+
+/* 지도 */
+.map_area{margin-bottom: 50px;}
+.map_area h3{font-size: var(--font-h6-size);font-weight: 500;color: #14181D;margin-bottom: 10px;}
+.map_area .map_txt{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;margin-bottom: 20px;}
+.map_area .map_addr{display: flex;align-items: center;gap: 6px;margin-top: 15px;padding: 15px;background: var(--color-sub1);border-radius: 10px;font-size: var(--font-16-size);color: var(--color-font1);}
+.map_area .map_addr .material-symbols-outlined{color: var(--color-main);font-size: 22px;}
+.map_area #map{width: 100%;height: 300px;border: 1px solid #DADCDD;border-radius: 15px;overflow: hidden;box-shadow: 0 2px 8px rgba(0,0,0,.06);box-sizing: border-box;}
+
+
+/* 오시는길 */
+.office{margin: 50px 0;}
+.office img{width: 100%;border-radius: 10px; margin-bottom: 15px;}
+.office .office_info{padding: 30px 30px; border: 1px solid #DADCDD;border-radius: 15px;box-shadow: 0 2px 8px rgba(0,0,0,.06);}
+.office .office_info h3{padding: 0 0 20px; border-bottom: 1px solid #ccc; font-size: var(--font-h6-size);font-weight: 500;color: #14181D;}
+.office .info_list{margin-bottom: 25px;}
+.office .info_list li{display: flex;padding: 18px 0;border-bottom: 1px solid #DADCDD;}
+.office .office_info .tit{width: 60px;flex-shrink: 0;font-size: var(--font-16-size);color: #999;}
+.office .office_info .desc{flex: 1;font-size: var(--font-18-size);color: var(--color-font1);line-height: 1.5;word-break: keep-all;}
+.office .office_info .btn_call{font-size: var(--font-18-size); padding: 15px 0; border: 2px solid var(--color-main); color: var(--color-main);text-align: center;border-radius: 10px;font-weight: 700;}

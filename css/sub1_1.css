@@ -1,0 +1,33 @@
+/* sub1_1 기업정보 콘텐츠 */
+
+
+/* 인트로 문구 */
+.first{margin-bottom: 30px;}
+.first h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 15px;}
+.first h3 span{color: var(--color-main);}
+.first p{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;}
+
+/* 이미지 + 숫자 */
+.int{margin-bottom: 50px;}
+.int img{width: 100%;border-radius: 10px;margin-bottom: 20px;}
+.int ul{display: flex;flex-wrap: wrap;gap: 10px;}
+.int ul li{width: calc(50% - 5px);padding: 20px 15px;background: var(--color-sub1);border-radius: 10px;text-align: center;box-sizing: border-box;}
+.int ul li span{display: block;font-size: var(--font-h6-size);font-weight: 700;color: var(--color-main);margin-bottom: 5px;}
+.int ul li p{font-size: var(--font-14-size);color: var(--color-font2);word-break: keep-all;}
+
+/* 회사개요 */
+.gaeyo{margin-bottom: 50px;}
+.gaeyo h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;padding-bottom: 15px;border-bottom: 2px solid var(--color-font1);}
+.gaeyo .list{border-bottom: 1px solid #ddd;}
+.gaeyo .list dl{display: flex;padding: 20px 0;}
+.gaeyo .list dt{width: 110px;flex-shrink: 0;font-size: var(--font-16-size);color: var(--color-font3);}
+.gaeyo .list dd{flex: 1;font-size: var(--font-16-size);color: var(--color-font1);word-break: keep-all;padding-left: 60px;}
+
+/* 이념 */
+.ideology{margin-bottom: 50px;}
+.ideology .back{background: #0A1830;padding: 20px 30px;border-radius: 10px;}
+.ideology h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;padding-bottom: 15px;}
+.ideology .list{padding: 20px 0;}
+.ideology .list:last-child{border-top: 1px solid #fff;}
+.ideology .list span{font-size: var(--font-18-size);color: #E1FF5B;display: block;}
+.ideology .list strong{color: #fff; font-size: var(--font-h6-size);}

@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* sub2_2 환경경영 콘텐츠 */
+
+/* 인트로 문구 + 이미지 */
+.fir{margin-bottom: 30px;}
+.fir h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 30px;word-break: keep-all;}
+.fir h3 span{display: block;margin-top: 5px;font-size: var(--font-18-size);color: var(--color-main);}
+.fir img{width: 100%;border-radius: 10px;}
+
+/* 환경방침 */
+.txt{margin-bottom: 50px;}
+.txt .txt_list{border-top: 1px solid #ddd;}
+.txt .txt_list li{padding: 20px 0;border-bottom: 1px solid #ddd;}
+.txt .txt_list strong{font-size: var(--font-18-size);font-weight: 500;color: var(--color-font1); word-break: keep-all;}
+
+/* 환경보전활동 */
+.enviro{margin-bottom: 50px;}
+.enviro h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 15px;}
+.enviro > p{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;margin-bottom: 10px;}
+.enviro .enviro_list{display: grid;grid-template-columns: 0.8fr 1.2fr;grid-template-rows: auto auto 1fr;column-gap: 20px;padding: 30px 0;border-bottom: 1px solid #ddd;}
+.enviro .enviro_list:last-child{border-bottom: none;padding-bottom: 0;}
+.enviro .enviro_list img{grid-row: 1 / span 3;width: 100%;height: auto;border-radius: 10px;}  /* 이미지는 왼쪽 3줄 차지 */
+.enviro .enviro_list .num{font-size: var(--font-16-size);font-weight: 700;color: var(--color-main);margin: 5px 0 8px;}
+.enviro .enviro_list strong{font-size: var(--font-gnb-size);font-weight: 700;color: #14181D;margin-bottom: 10px;}
+.enviro .enviro_list p{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;}
+
+/* 6가크롬 관리 */
+.chrome{margin-bottom: 50px;padding: 30px 20px;background: #F6F7F8;border-radius: 10px;}
+.chrome h3{font-size: var(--font-gnb-size);font-weight: 500;color: #14181D;margin-bottom: 10px;}
+.chrome > p{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;}
+.chrome .chrome_list{display: flex;justify-content: center;gap: 60px;margin-top: 25px;padding-top: 25px;border-top: 2px solid #DADCDD;}
+.chrome .chrome_list li{position: relative;text-align: center;}
+.chrome .chrome_list li + li::before{content: 'arrow_forward';font-family: 'Material Symbols Outlined';font-size: 22px;line-height: 1;font-feature-settings: 'liga';color: var(--color-font3);position: absolute;left: -30px;top: 15px;transform: translateX(-50%);}  /* 항목 사이(gap 절반) 화살표 */
+.chrome .chrome_list strong{display: block;font-size: var(--font-h4-size);font-weight: 700;color: #14181D;line-height: 1.2;}
+.chrome .chrome_list li:last-child strong{color: var(--color-main);}
+.chrome .chrome_list span{font-size: var(--font-14-size);color: var(--color-font3);}
+
+/* 기후변화대응 */
+.climate h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;margin-bottom: 15px;}
+.climate > p{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;}
+
+/* 막대 그래프 : em의 height(%)가 막대 높이 */
+.climate .chart{display: flex;gap: 20px;height: 200px;padding: 40px 20px 0;margin-bottom: 50px;border-bottom: 2px solid var(--color-font1);}
+.climate .chart li{flex: 1;position: relative;display: flex;flex-direction: column;justify-content: flex-end;}
+.climate .chart span{font-size: var(--font-16-size);font-weight: 700;text-align: center;margin-bottom: 8px;}
+.climate .chart em{display: block;flex-shrink: 0;align-self: center;width: 36px;background: #CDD9E5;border-radius: 6px 6px 0 0;}
+.climate .chart .now em{background: var(--color-main);}
+.climate .chart strong{position: absolute;left: 0;top: 100%;width: 100%;padding-top: 12px;font-size: var(--font-16-size);font-weight: 400;color: var(--color-font2);text-align: center;}  /* 연도는 기준선 아래 */
+
+/* 공장 + 수치 박스 */
+.factory{margin-top: 60px;}
+.factory img{width: 100%;border-radius: 10px;margin-bottom: 20px;}
+.factory .factory_list{padding: 0 25px;border: 1px solid #ccc;border-radius: 10px;}
+.factory .factory_list li{padding: 25px 0;}
+.factory .factory_list li + li{border-top: 2px solid #DADCDD;}
+.factory .factory_list .big_num{display: block;font-size: var(--font-h5-size);font-weight: 700;color: var(--color-main);line-height: 1.3;}
+.factory .factory_list strong{display: block;font-size: var(--font-gnb-size);font-weight: 700;color: #14181D;margin: 8px 0 12px;}
+.factory .factory_list p{font-size: var(--font-16-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;}

@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 로그인 · 약관동의 · 회원가입 공통 (기업형 www/login, www/member 모바일 이식) */
+
+.member_page{background: #F6F7F8;padding: 70px 20px 60px;}  /* 위 70px = 고정 헤더 높이만큼 비움 */
+.member_page .title_area h2{padding-bottom: 30px;}
+.member_page .title_area h2::after{display: none;}  /* 서브 공통 제목 세로선 숨김 */
+.member_box{padding: 35px 20px;background: #fff;border-radius: 10px;}
+.member_box .desc{margin-bottom: 30px;font-size: var(--font-14-size);color: var(--color-font3);text-align: center;word-break: keep-all;}
+.member_box .desc .req{color: var(--color-point1);}
+
+/* 입력칸 공통 */
+.member_box label{display: block;margin-bottom: 6px;font-size: var(--font-14-size);font-weight: 500;color: var(--color-font1);}
+.member_box input[type=text],
+.member_box input[type=password],
+.member_box input[type=email],
+.member_box input[type=tel],
+.member_box select{width: 100%;height: 50px;padding: 0 15px;border: 1px solid #DBDFE5;border-radius: 8px;background: #fff;font-size: var(--font-16-size);box-sizing: border-box;}
+.member_box input::placeholder{color: #B4BAC4;}
+.member_box input:focus,
+.member_box select:focus{outline: none;border-color: var(--color-main);}
+
+/* 버튼 공통 */
+.btn_main,
+.btn_line{display: flex;justify-content: center;align-items: center;width: 100%;height: 54px;border-radius: 8px;font-size: var(--font-16-size);font-weight: 500;cursor: pointer;box-sizing: border-box;}
+.btn_main{border: 0;background: var(--color-main);color: #fff;}
+.btn_line{border: 1px solid var(--color-main);background: #fff;color: var(--color-main);}
+.btn_wrap{display: flex;gap: 10px;margin-top: 30px;}
+
+/* 로그인 */
+.login_form .field{margin-bottom: 15px;}
+.login_form .btn_main{margin-top: 25px;}
+.login_find{display: flex;justify-content: center;margin-top: 20px;}
+.login_find a{position: relative;padding: 0 12px;font-size: var(--font-14-size);color: var(--color-font3);}
+.login_find a + a::before{content: '';position: absolute;left: 0;top: 50%;width: 1px;height: 12px;margin-top: -6px;background: #DBDFE5;}  /* 아이디찾기 | 비밀번호찾기 */
+.login_join{display: flex;justify-content: center;gap: 8px;margin-top: 30px;padding-top: 25px;border-top: 1px solid #DBDFE5;font-size: var(--font-14-size);color: var(--color-font2);}
+.login_join a{color: var(--color-main);font-weight: 700;}
+
+/* 약관동의 */
+.agree_box h3{margin-bottom: 10px;font-size: var(--font-16-size);font-weight: 500;color: #14181D;}
+.agree_box .policy{height: 120px;padding: 12px;overflow-y: auto;border: 1px solid #DBDFE5;border-radius: 8px;font-size: var(--font-12-size);line-height: 1.6;color: var(--color-font2);word-break: keep-all;}
+.agree_box .check{margin: 12px 0 30px;}
+.agree_box .check label{margin: 0;font-weight: 400;}
+
+/* 체크박스 모양 : input은 숨기고 label::before로 그림 */
+.member_box input[type=checkbox]{position: absolute;opacity: 0;width: 0;height: 0;}
+.member_box input[type=checkbox] + label{display: flex;align-items: center;gap: 10px;}
+.member_box input[type=checkbox] + label::before{content: '';flex-shrink: 0;width: 20px;height: 20px;border: 1px solid #B4BAC4;border-radius: 5px;background: #fff center / 12px no-repeat;box-sizing: border-box;}
+.member_box input[type=checkbox]:checked + label::before{border-color: var(--color-main);background-color: var(--color-main);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10'%3E%3Cpath d='M1 5l3.5 3.5L11 1' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E");}  /* 흰색 체크 표시 */
+.member_box input[type=checkbox]:focus-visible + label::before{outline: 2px solid var(--color-main);outline-offset: 2px;}
+
+/* 회원가입 */
+.join_form li{margin-bottom: 20px;}
+.join_form .tit{display: block;margin-bottom: 6px;font-size: var(--font-14-size);font-weight: 500;color: var(--color-font1);}
+.join_form label .req,
+.join_form .tit .req{margin-left: 2px;color: var(--color-point1);}
+.join_form .row{display: flex;align-items: center;gap: 6px;}
+.join_form .row select,
+.join_form .row input{flex: 1;min-width: 0;}
+.join_form .row span{flex-shrink: 0;color: var(--color-font3);}

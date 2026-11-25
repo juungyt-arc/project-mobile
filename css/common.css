@@ -1,0 +1,262 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* font-family: "Noto Sans KR", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+
+:root{
+    --color-main : #005BAC;
+    --color-point1 : #E84855;
+    --color-point2 : #00ffd4;
+    --color-point3 : #FF6B35;
+    --color-sub1 : #E8F1F8;
+    --color-sub2 : #F6FBFF;
+    --color-font1 : #333;
+    --color-font2 : #666;
+    --color-font3 : #999;
+
+    --font-h2-size : 4.29rem;  /*60px*/
+    --font-h3-size : 3.43rem; /*48px*/
+    --font-h4-size : 2.57rem;   /*36px*/
+    --font-h5-size : 2.14rem;    /*30px*/
+    --font-h6-size : 1.71rem;    /*24px*/
+    --font-gnb-size: 1.43rem;   /* 20px*/
+    --font-18-size : 1.29rem;   /*18px*/
+    --font-16-size : 1.14rem;   /*16px*/
+    --font-14-size : 1rem;     /*14px*/
+    --font-12-size : 0.86rem;  /*12px*/
+
+    --box-shadow_1 : 1px 1px 10px 1px rgba(0,0,0,.3);
+    --box-shadow_2 : 1px 1px 10px 2px rgba(0,0,0,.4);
+}
+/* 구글 아이콘 폰트 공통 스타일 */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+html{font-size: 14px;}
+body {
+ color:#333;
+ font-family: "Noto Sans KR", sans-serif;}
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:#333; text-decoration: none ;display: block; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;}
+textarea { resize:none; }
+label { cursor:pointer; }
+table{border-collapse: collapse;}
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+
+/* 스플래시 스크린 전체 화면 설정 */
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #005BAC; /* 배경 색상 (스플래시 이미지와 같은 파랑) */
+  display: none; /* 기본 상태는 숨김 및 투명 처리 */
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999; /* 최상단에 배치 */
+  transition: opacity 0.5s ease-out, visibility 0.5s; /* 사라질 때 애니메이션 */
+}
+
+/* 첫 방문자에게 스플래시를 노출할 때 붙일 클래스 */
+#splash-screen.active {
+  display: flex;          /* 원래 가지고 있던 flex 정렬 활성화 */
+  justify-content: center;
+  align-items: center;
+  opacity: 1;             /* 투명도 원복 */
+  visibility: visible;    /* 가시성 원복 */
+}
+
+/* 스플래시 이미지 크기 및 애니메이션 (선택) */
+.splash-logo {
+  width: 100%;
+  height: 100%;        /* 화면 세로까지 꽉 채움 */
+  object-fit: cover;   /* 비율 유지, 넘치는 좌우만 살짝 잘림 */
+}
+
+/* 스플래시가 끝났을 때 적용할 클래스 */
+#splash-screen.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden;}
+
+/* 헤더공통 */
+#headerArea{background:rgba(255,255,255,.8);
+   width: 100%; height: 70px; position: fixed; left:0; top:0;
+   z-index: 100;}
+#headerArea .header_top{display: flex; justify-content: space-between;
+        align-items: center; height: 100%; padding-left: 20px;}  /* 헤더 높이(84px) 기준으로 세로 가운데 */
+#headerArea h1{ font-size: 30px;}
+#headerArea h1 a{display: block; color: #333; text-decoration: none;}
+#headerArea h1 img{display: block; width: 130px; height: auto;} 
+
+#headerArea .menu_ham {
+    display: block;
+    height: 50px;
+    position: relative;
+    z-index:30; 
+}
+#headerArea .menu_ham span {
+    width: 30px;
+    height: 4px;
+    background: #333;
+    position: relative;
+    text-indent: -9999px;
+    display: block;
+    margin: 26px 15px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+#headerArea .menu_ham span::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #333;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+#headerArea .menu_ham span::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #333;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.mn_open .menu_ham span, 
+#headerArea.mn_open .menu_ham span::before, 
+#headerArea.mn_open .menu_ham span::after {
+    background: #333;
+}
+#headerArea.mn_open .menu_ham span {
+    background: rgba(0,0,0,0);
+}
+#headerArea.mn_open .menu_ham span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+#headerArea.mn_open .menu_ham span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* nav 영역*/
+#headerArea .modal{position: fixed;width: 100%; height: 100%;
+          left:0; top:0; z-index:10; background: rgba(0,0,0,.8); display: none;}
+#headerArea #gnb{position: absolute; width:80%;  right:-100%; top:0; 
+    opacity: 0; background: #fff;z-index:20 }
+#headerArea #gnb li h3 a{display: flex; 
+                  justify-content:space-between; 
+                  align-items: center; 
+                  padding: 15px 30px;
+                  font-size: 1.2rem; font-weight: 700;}  
+/* nav 상단 : 로고 + 로그인/회원가입 */
+#headerArea #gnb .gnb_top{padding: 22px 30px 24px; background: var(--color-sub2);}
+#headerArea #gnb .gnb_logo{display: inline-block; padding: 0;}
+#headerArea #gnb .gnb_logo img{display: block; width: 130px; height: auto;}
+#headerArea #gnb .member{display: flex; gap: 8px; margin-top: 30px;}
+#headerArea #gnb .member li{flex: 1; border-top: none;}
+#headerArea #gnb .member a{padding: 10px 0; border: 1px solid var(--color-main); border-radius: 6px; text-align: center; font-size: var(--font-14-size); font-weight: 700; color: var(--color-main);}
+#headerArea #gnb .member .join{background: var(--color-main); color: #fff;}
+#headerArea #gnb li{border-top:1px solid #ccc;}
+#headerArea #gnb li a{ padding: 15px 30px; font-size: 1.1rem; font-weight: 500;} 
+#headerArea #gnb li ul{background:#F6F7F8; display: none}
+#headerArea #gnb .last{border-bottom:1px solid #ccc}
+#headerArea #gnb .depth1 .icon::after{content: 'keyboard_arrow_down'; font-family: 'Material Symbols Outlined'; font-size: 24px; font-weight: normal; line-height: 1; letter-spacing: normal; white-space: nowrap; font-feature-settings: 'liga'; display: inline-block; transition: transform .3s;} /* 글자를 아이콘으로 바꿔주는 설정(liga) */
+#headerArea #gnb .depth1.on .icon::after{transform: rotate(180deg);}
+
+
+/* 푸터공통 */
+#footerArea{padding: 30px 40px 30px; background: #000000; color: var(--color-font3); font-size: var(--font-16-size); line-height: 1.7;}
+
+/* 로고 + SNS */
+#footerArea .footer_top{display: flex; justify-content: space-between; align-items: center; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,.1);}
+#footerArea .f_logo img{display: block; width: 150px; height: auto; filter: brightness(0) invert(1);} /* 검은 로고를 흰색으로 */
+#footerArea .sns{display: flex; gap: 8px;}
+#footerArea .sns a{display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,.08); color: #fff; font-size: 20px; transition: background .3s;}
+#footerArea .sns a:hover{background: var(--color-main);}
+
+/* 회사정보 */
+#footerArea address{margin-top: 24px; word-break: keep-all;}
+#footerArea address .bar{margin: 0 6px; color: rgba(255,255,255,.2);}
+#footerArea .copy{margin-top: 10px; font-family: "Roboto", sans-serif; color: #6c737a;}
+
+/* 패밀리사이트 */
+#footerArea .family{position: relative; margin-top: 24px;}
+#footerArea .family_btn{display: flex; justify-content: center; align-items: center; width: 100%; padding: 12px 16px; border: 1px solid rgba(255,255,255,.15); border-radius: 6px; background: transparent; color: #ccc; font-size: var(--font-16-size); cursor: pointer;}
+#footerArea .family_btn .material-symbols-outlined{transition: transform .3s;}
+#footerArea .family.on .family_btn .material-symbols-outlined{transform: rotate(180deg);}
+#footerArea .family_list{display: none; position: absolute; left: 0; right: 0; bottom: 100%; margin-bottom: 4px; padding: 6px 0; border-radius: 6px; background: #2B3138; z-index: 5;}
+#footerArea .family_list a{padding: 10px 16px; color: #ccc; font-size: var(--font-16-size);}
+#footerArea .family_list a:hover{background: rgba(255,255,255,.06); color: #fff;}
+
+/* 하단메뉴 */
+#footerArea .f_menu{display: flex; flex-wrap: wrap; margin-top: 20px; justify-content: center;}
+#footerArea .f_menu li + li::before{content: ''; display: inline-block; width: 1px; height: 10px; margin: 0 10px; background: rgba(255,255,255,.2); vertical-align: middle;}
+#footerArea .f_menu li, #footerArea .f_menu a{display: inline-block;}
+#footerArea .f_menu a{color: #aaa;}
+#footerArea .f_menu .privacy a{color: #005BAC; font-weight: 700;}
+#footerArea .top_move{
+    width: 50px; height: 50px; background: #005BAC;
+    border-radius: 50%; position: fixed; right: 10px; bottom: 50px;
+    display: none; z-index: 100; color: #fff;
+}
+#footerArea .top_move span{display:flex;
+    width: 100%; height: 100%; justify-content: center;
+    align-items: center;  font-weight: 600;
+}
+
+
+
+
+
+/* 모바일 팝업창 세로 높이 넘칠때*/
+/* overflow-y : scroll;  (혹은 auto)
+   max-height : 80~90vh  */

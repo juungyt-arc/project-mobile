@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* sub3_2 레미콘 콘텐츠 */
+
+
+.content_area{padding-bottom: 0;}  /* 마지막 회색 배경이 푸터까지 닿게 */
+
+/* 첫 문구 */
+.fir{margin-bottom: 30px;}
+.fir img{width: 100%;border-radius: 10px;margin-bottom: 20px;}
+.fir p{font-size: var(--font-16-size); color: var(--color-font2);word-break: keep-all;line-height: 1.7;}
+
+/* 전국을 잇는 다권역 공급망 */
+.supply{margin-bottom: 50px; background: #0A1830;padding: 30px;border-radius: 10px;}
+.supply h3{font-size: var(--font-h6-size);color: #fff; font-weight: 500;line-height: 1.4;margin-bottom: 30px;word-break: keep-all;}
+.supply strong{display: block;font-size: 26px; color: #fff;font-weight: 400;margin-bottom: 20px;}
+.supply .num{font-size: 70px;color: #E1FF5B;font-weight: 700;line-height: 1;margin-right: 5px;}
+.supply .sadd{color: rgba(255,255,255,0.7);font-size: var(--font-16-size);line-height: 1.7;word-break: keep-all;padding-top: 20px;border-top: 1px solid rgba(255,255,255,0.2);}
+
+/* 레미콘 규격 세 개의 숫자 */
+.tre{margin-bottom: 50px;}
+.tre h3{font-size: var(--font-h6-size);color: #14181D;font-weight: 500;line-height: 1.4;word-break: keep-all;margin-bottom: 10px;}
+.tre > p{font-size: var(--font-16-size);color: var(--color-font2);margin-bottom: 25px;}
+.tre ul{display: flex;gap: 10px;}
+.tre li{flex: 1;background: var(--color-sub1);border-radius: 10px;padding: 20px 10px;text-align: center;}
+.tre li span{display: block;font-size: var(--font-h5-size);font-weight: 700;color: var(--color-main);line-height: 1;margin-bottom: 12px;}
+.tre li p{font-size: var(--font-14-size);color: var(--color-font1);line-height: 1.5;word-break: keep-all;}
+
+/* 재료저장 현장배출 */
+.keep{margin: 0 -20px; background: #F6F7F8;padding: 50px 20px;}
+.keep h3{font-size: var(--font-h6-size);color: #14181D; font-weight: 500;line-height: 1.4;word-break: keep-all;margin-bottom: 30px;}
+.keep .keep_list{background: #fff;padding: 10px 20px;border-radius: 10px;}
+.keep .keep_list li{padding: 20px 0;}
+.keep .keep_list li:not(:last-child){border-bottom: 1px solid #DBDFE5;}
+.keep .keep_list .num{display: block;font-size: var(--font-16-size);font-weight: 700;color: var(--color-main);}
+.keep .keep_list strong{display: block;font-size: var(--font-18-size);color: #0A1830; margin: 10px 0;}
+.keep .keep_list p{font-size: var(--font-16-size);color: var(--color-font2);line-height: 1.7;word-break: keep-all;}
+
+/* 90분 이내 */
+.nine{margin-top: 20px; background: #fff;padding: 20px 20px;border-radius: 10px;display: flex;align-items: center;gap: 20px;}
+.nine span{display: block; font-size: 56px;font-weight: 700;color: var(--color-main);line-height: 1;margin-bottom: 5px;}
+.nine p{flex-shrink: 0; text-align: center; font-size: var(--font-gnb-size);color: var(--color-font2);}
+.nine strong{flex: 1; font-size: var(--font-16-size);word-break: keep-all;line-height: 1.5;}
